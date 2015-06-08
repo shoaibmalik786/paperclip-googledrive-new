@@ -3,26 +3,30 @@
 $:.push File.expand_path("../lib", __FILE__)
 require "paperclip/version"
 
-Gem::Specification.new do |gem|
-  gem.name          = "paperclip-googledrive"
-  gem.version       = PaperclipGoogleDrive::VERSION
-  gem.authors       = ['Shoaib Malik']
-  gem.email         = ["shoaib2109@gmail.com"]
+Gem::Specification.new do |spec|
+  spec.name          = "paperclip-googledrive"
+  spec.version       = PaperclipGoogleDrive::VERSION
+  spec.authors       = ['Shoaib Malik']
+  spec.email         = ["shoaib2109@gmail.com"]
 
-  gem.summary       = %q{Extends Paperclip with Google Drive storage}
-  gem.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
-  gem.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive"
+  if spec.respond_to?(:metadata)
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
+  end
 
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  gem.files         = Dir["lib/**/*"] + ["README.md", "LICENSE", "paperclip-googledrive.gemspec"]
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  spec.summary       = %q{Extends Paperclip with Google Drive storage}
+  spec.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
+  spec.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive"
 
-  gem.require_paths = ["lib"]
-  gem.required_ruby_version = ">= 2.0.0"
-  gem.license       = "MIT"
+  spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  spec.files         = Dir["lib/**/*"] + ["README.md", "LICENSE", "paperclip-googledrive.gemspec"]
+  spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 
-  gem.add_dependency "paperclip"
-  gem.add_dependency 'google-api-client', "~> 0.5"
+  spec.require_paths = ["lib"]
+  spec.required_ruby_version = ">= 2.0.0"
+  spec.license       = "MIT"
 
-  gem.add_development_dependency "rake", ">= 0.9"
+  spec.add_dependency "paperclip"
+  spec.add_dependency 'google-api-client', "~> 0.5"
+
+  spec.add_development_dependency "rake", "~> 10.0"
 end
