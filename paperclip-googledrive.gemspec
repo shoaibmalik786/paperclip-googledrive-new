@@ -6,8 +6,8 @@ require "paperclip/version"
 Gem::Specification.new do |gem|
   gem.name          = "paperclip-googledrive"
   gem.version       = PaperclipGoogleDrive::VERSION
-  gem.authors       = ['evinsou']
-  gem.email         = ["evinsou@gmail.com"]
+  gem.authors       = ['Shoaib Malik']
+  gem.email         = ["shoaib2109@gmail.com"]
 
   gem.summary       = %q{Extends Paperclip with Google Drive storage}
   gem.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = ">= 2.0.0"
   gem.license       = "MIT"
 
-  gem.add_dependency "paperclip", ">= 4.2"
+  gem.add_dependency "paperclip"
   gem.add_dependency 'google-api-client', "~> 0.5"
 
   gem.add_development_dependency "rake", ">= 0.9"
