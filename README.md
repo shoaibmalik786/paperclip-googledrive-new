@@ -8,7 +8,7 @@ PaperclipGoogledrive is a gem that extends paperclip storage for Google Drive. W
 
 Add this line to your application's Gemfile:
 
-    gem 'paperclip-googledrive'
+    gem 'paperclip-googledrive-new'
 
 And then execute:
 
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install paperclip-googledrive
+    $ gem install paperclip-googledrive-new
 
 ## Google Drive Setup
 
@@ -92,7 +92,7 @@ Useful links
 
 ## License
 
-[MIT License](https://github.com/evinsou/paperclip-googledrive/blob/master/LICENSE)
+[MIT License](https://github.com/shoaibmalik786/paperclip-googledrive-new/blob/master/LICENSE)
 
 ## Contributing
 

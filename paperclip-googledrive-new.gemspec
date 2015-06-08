@@ -14,11 +14,11 @@ Gem::Specification.new do |spec|
   end
 
   spec.summary       = %q{Extends Paperclip with Google Drive storage with latest version of paperclip}
-  spec.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
+  spec.description   = %q{paperclip-googledrive-new extends paperclip support of storage for google drive storage}
   spec.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive-new"
 
   spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  spec.files         = Dir["lib/**/*"] + ["README.md", "LICENSE", "paperclip-googledrive.gemspec"]
+  spec.files         = Dir["lib/**/*"] + ["README.md", "LICENSE", "paperclip-googledrive-new.gemspec"]
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   spec.require_paths = ["lib"]
