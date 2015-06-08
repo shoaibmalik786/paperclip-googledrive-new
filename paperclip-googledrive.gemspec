@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
   end
 
-  spec.summary       = %q{Extends Paperclip with Google Drive storage}
+  spec.summary       = %q{Extends Paperclip with Google Drive storage with latest version of paperclip}
   spec.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
   spec.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive"
 
