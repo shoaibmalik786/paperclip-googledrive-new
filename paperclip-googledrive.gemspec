@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "paperclip/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "paperclip-googledrive"
+  spec.name          = "paperclip-googledrive-new"
   spec.version       = PaperclipGoogleDrive::VERSION
   spec.authors       = ['Shoaib Malik']
   spec.email         = ["shoaib2109@gmail.com"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Extends Paperclip with Google Drive storage with latest version of paperclip}
   spec.description   = %q{paperclip-googledrive extends paperclip support of storage for google drive storage}
-  spec.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive"
+  spec.homepage      = "https://github.com/shoaibmalik786/paperclip-googledrive-new"
 
   spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   spec.files         = Dir["lib/**/*"] + ["README.md", "LICENSE", "paperclip-googledrive.gemspec"]
